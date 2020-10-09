@@ -1,6 +1,7 @@
 nextflow.enable.dsl = 2
 
-params.files = "s3://rnaseq-nf/data/test/temp*"
+params.files = ["s3://rnaseq-nf/data/test/temp_10GB_file.1","s3://rnaseq-nf/data/test/temp_10GB_file.2","s3://rnaseq-nf/data/test/temp_10GB_file.3"]
+
 
 process ls {
   echo true
